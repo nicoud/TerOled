@@ -1,4 +1,4 @@
-//TestOledWire.ino  
+//TerGfxOled.ino  Compare to TerOled
 
 #include <SPI.h>
 #include <Wire.h>
@@ -18,6 +18,7 @@ byte val;
 void loop() {
   display.clearDisplay();
   display.setCursor (0,0);
+  display.println ("Gfx");
   display.println (val++,BIN);
   display.display();
       delay (100);
