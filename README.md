@@ -14,8 +14,8 @@
 ### Add two lines at the end of setup _SetupOledMap()_ or _SetupOledPix()_ in order to be compatible with 32 lines.
  ####   Cmd (0xDA);
  ####   Cmd (0x02);
-###But now the text lines are numbered 4,5,6,7. No guarantie is given for what happen on lines 0,1,2,3 and for dots with y>32.
-Use DoubleH(); - for 128x32,  SingleH(); back to 128x64. If you have access to SSD1306 low level doc, play with Cmd() to scroll and do other tricks.
+### Now the text lines are numbered 4,5,6,7. No guarantie is given for what happen on lines 0,1,2,3 and for dots with y>32.
+Functions are DoubleH(); - for 128x32,  SingleH(); back to 128x64. If you have access to SSD1306 low level doc, play with Cmd() to scroll and do other tricks.
 
 ## Not convinced? See See __[TerSer and TerOled Compare][2]__ 
 ## __[Detailed doc (4 pages) TerOled.pdf ][1]__
